@@ -58,7 +58,11 @@ export default class GameModel {
         const match = matches[i];
         for (let j = 0; j < match.count; j++) {
             this.removeBall(match.startIndex);
+        } if (matches.length > 0 && this.onBallsRemoved) {
+            const removedBallsInfo = matches.map(match => ({startIndex: match.startIndex, count: match.count}));
+            this.onBallsRemoved(removedBallsInfo);
         }
+
     }
 
     // Optionally, return the number of removed balls or matches for further processing
