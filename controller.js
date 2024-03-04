@@ -6,31 +6,31 @@ class GameController {
         this.model = model;
         this.view = view;
 
-        // Lyt efter brugerinput eller andre begivenheder
+        // Listen for user input or other events
         this.setupEventListeners();
     }
 
-    // Initialiser spillet
+    // Initialize the game
     initGame() {
-        // Tilføj startkugler til spillet
-        this.model.addBall('rød');
-        this.model.addBall('blå');
-        this.model.addBall('grøn');
-        this.model.addBall('rød');
-        this.model.addBall('gul');
+        // Add starting balls to the game
+        this.model.addBall('red');
+        this.model.addBall('blue');
+        this.model.addBall('green');
+        this.model.addBall('red');
+        this.model.addBall('yellow');
 
-        // Vis de startkugler i viewet
+        // Display the starting balls in the view
         this.view.renderBalls(this.model.ballList);
     }
 
-    // Lyt efter brugerinput eller andre begivenheder
+    // Listen for user input or other events
     setupEventListeners() {
-        // Implementer eventlisteners som f.eks. klik på kugler
+        // Implement event listeners such as clicking on balls
     }
 
-    // Metode til at håndtere brugerens klik på en kugle
+    // Method to handle the user's click on a ball
     handleBallClick(index) {
-        // Implementer logikken til at håndtere klik på en kugle
+        // Implement the logic to handle a click on a ball
     }
 }
 

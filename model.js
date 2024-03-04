@@ -22,7 +22,7 @@ class GameModel {
     }
 
     detectAndRemoveMatches() {
-        // Implementer logikken til at finde og fjerne matches i kuglelisten
+        // logic for finding and removing matches
     }
 }
 
